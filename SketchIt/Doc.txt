@@ -1,0 +1,36 @@
+Rough documentation:
+*Approach: Line renderer method was used to draw the lines on finger touch. 
+The touch/click is registered using Input's GetKeyDown method and checked using KeyCode property. The touch is
+checked for each frame and if registered and held then an instance of the brush game object is created and the 
+new points along the path traced is constantly updated and their position fed to the line renderer.
+
+*Components:
+The file hierarchy is as shown
+[Note all the pngs were made on the spot to avoid copyright issues and shouldn't correspond to any copyright designs]
+Assets
+│
+├───AppScene
+│       DrawingApp.unity
+│
+├───Board Objects
+│       Brush.prefab
+│       Whiteboard.prefab
+│
+├───Materials
+│       New Material.mat
+│
+├───PNGS
+│       eraser.png
+│       Save.png
+│
+├───Scripts
+│       BrushAlterer.cs
+│       DrawLogic.cs
+│
+|---SavedImages
+|
+|
+|
+└───TextMesh Pro
+
+*Scaling: The canvas scaler is set to 'scale with screen size' with reference resolution 800x600px
